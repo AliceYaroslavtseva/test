@@ -16,19 +16,6 @@ class RequestViewSet(viewsets.ModelViewSet):
         serializer.save(user=self.request.user)
 
 
-# class RequestMessageViewSet(viewsets.ModelViewSet):
-#     permission_classes = (IsAuthenticated, )
-#     serializer_class = RequestMessageSerializer
-
-#     def get_queryset(self):
-#         request = get_object_or_404(Request, pk=self.kwargs.get('request_id'))
-#         return request.massages
-
-#     def perform_create(self, serializer):
-#         request = get_object_or_404(Request, pk=self.kwargs.get('request_id'))
-#         serializer.save(user=self.request.user, request=request)
-
-
 class RequestMessageViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated, )
     serializer_class = RequestMessageSerializer
