@@ -85,7 +85,7 @@ http://127.0.0.1:8000/api/v1/request/
 {
   "username": "alice",
   "theme": "la-la-la",
-  "phone_number": "+79674910773"
+  "phone_number": "+796*******3"
 }
 ```
 
